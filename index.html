@@ -1,37 +1,59 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<title>Jordan Shear</title>
-	<!-- firebase -->
-	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-	<!-- reset all styles -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<!-- momentjs -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.3/moment.js"></script>
-	<!-- jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<!-- font awesome -->
-	<script src="https://use.fontawesome.com/ca369710c9.js"></script>
-	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	<!-- person css file -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- js app -->
-	<script src="assets/js/start.js"></script>
-	
+  <head>
 
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<body id="page-top">
+
+
+
+
+    <title>Jordan Shear</title>
+
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- Scolling Style -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- jQuery Nice Select -->
+    <link href="css/nice-select.css" rel="stylesheet"> 
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Adobe Typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/fev4asl.css">
+
+    <!-- Button Styles -->
+    <!-- <link href="css/base.css" rel="stylesheet"> -->
+    <link href="css/buttons.css" rel="stylesheet">
+    <link href="css/vicons-font.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="fa fa-compass" type="image/gif" sizes="16x16">
+
+
+  </head>
+
+  <body id="page-top">
+
+
 <!-- categories: 
 1.)header: name on the left with all the following cateories on the right
 2.)graphic with parallaxing inspirational image behind indicating this is a portfolio and sarcastically referencing the inspirational picture in the background. Also include my social media stuff.
 3.)Bio
-	past: where I come from
-	present: where I am
-	future: what I want to do
+  past: where I come from
+  present: where I am
+  future: what I want to do
 4.) Additional information: technologies known, employment history, education, skills
 5.) Another motivational image with sarcasm 
 6.) Example code: Place all the previous projects and homework here with graphics. Make thumbnails for all of them that are appropriate and indicate if they have been updated since they have been created
@@ -39,30 +61,151 @@
 8.) Contact form
  -->
 
-<nav class="navbar navbar-expand-lg navbar-inverse bg-inverse fixed-top">
-	<div class="container">
-		<a href="#page-top" class="navbar-brand js-scroll-trigger">Jordan Shear</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aira-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="navbar-nav m-auto">
-				<li class="nav-item">
-					<a href="#about" class="nav-link js-scroll-trigger">About</a>
-				</li>
-				<li class="nav-item">
-					<a href="#portfolio" class="nav-link js-scroll-trigger">Portfolio</a>
-				</li>
-				<li class="nav-item">
-					<a href="#contact-form" class="nav-link js-scroll-trigger">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+
+    <!-- Nav-Bar that collapses -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Jordan Shear</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <!-- ***********Used to say #services for href -->
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="parallax text-center">
+      <div class="container">
+        <h1 id="larger-text">Programming Portfolio for Jordan Shear</h1>
+        <p class="lead" id="not-as-larger-text">Complete with inspirational photos and inflated credentials</p>
+    </header>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-</body>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2 class="text-center">About<br></h2>
+            <div class="row">
+              <div class="col-lg-4">
+                <h3 class="about-header">Past</h3>
+                <p class="past-paragraph">This is a paragraph where I talk all about my past and its super cute and funny and sarcastic and people will all like me maybe a little bit sometimes because of it...or not</p>
+              </div>
+              <div class="col-lg-4">
+                <h3 class="about-header">Present</h3>
+                <p class="present-paragraph">This is a paragraph where I talk all about my current place and its super cute and funny and sarcastic and people will all like me maybe a little bit sometimes because of it...or not</p>
+              </div>
+              <div class="col-lg-4">
+                <h3 class="about-header">Future</h3>
+                <p class="future-paragraph">This is a paragraph where I talk all about my future and its super cute and funny and sarcastic and people will all like me maybe a little bit sometimes because of it...or not</p>
+              </div>
+            </div>
+    </section>
+
+    <section class="parallax1 text-center">
+      <div class="container">
+        <h1 id="larger-text">Fun Fact!</h1>
+        <p class="lead" id="not-as-larger-text">I'm terrified of horses.<br>.....also, their legs are fingers and that grosses me out</p>
+    </section>
+
+    <section id="portfolio" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+          <h2 class="text-center">Portfolio<br></h2>
+         </div>
+       </div>
+        <div class="row">
+          <!-- new stuff goes here -->
+          <a href="https://oitowl7.github.io/hangman-game/" class="col-lg-4" target="none"><img src="https://i.imgflip.com/15rg6x.jpg" alt="happy ned"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact</h2>
+            <form>
+              <div class="form-group">
+                <label for="user-email">Email Address</label>
+                <input type="email" class="form-control" id="user-email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea type="text" class="form-control" id="message" rows="7"></textarea>
+              </div>
+            </form>
+            <button class="button button--aylen button--round-l button--text-small" id="submit-comment"><i class="button__icon icon icon-plus"></i><span>Submit</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Local 2017</p>
+        <p class="m-0 text-center text-white">Information powered by Google</p>
+      </div>
+      <!-- /.container -->
+      <a href="https://codepen.io/desandro/pen/nFrte" target="blank">Link to Isotope</a>
+    </footer>
+    
+    <!-- goole map -->
+    <script type="text/javascript"
+  async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYXCq6EB8O4erxFYFCwODnctP39mYUf24&libraries=places&callback=displayNeighborhoodInfo"></script>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
+    <!-- Font Awesome 5 -->
+    <script src="https://use.fontawesome.com/0e0787515a.js"></script>
+
+    <!-- jQuery Nice Select -->
+    <script src="js/jquery.js"></script> 
+    <script src="js/jquery.nice-select.js"></script>
+
+    <!-- Adobe Script -->
+     <script type="text/javascript" src="https://use.typekit.net/fev4asl.css"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <!-- Button Style -->
+    <script>
+      (function() {
+        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+        if(isSafari) {
+          document.getElementById('support-note').style.display = 'block';
+        }
+      })();
+    </script>
+
+  </body>
+
 </html>
