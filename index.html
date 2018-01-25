@@ -72,7 +72,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about-title">About</a>
             </li>
             <li class="nav-item">
               <!-- ***********Used to say #services for href -->
@@ -97,7 +97,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <h2 class="text-center">About<br></h2>
+            <h2 class="text-center" id="about-title">About<br></h2>
             <div class="row">
               <div class="col-lg-4">
                 <h3 class="about-header">Past</h3>
@@ -117,7 +117,7 @@
     <section class="parallax1 text-center">
       <div class="container">
         <h1 id="larger-text">Fun Fact!</h1>
-        <p class="lead" id="not-as-larger-text">I'm terrified of horses.<br>.....also, their legs are fingers and that grosses me out</p>
+        <p class="lead" id="not-as-larger-text">I'm terrified of horses.<br>.....also, their legs are technically fingers and that grosses me out</p>
     </section>
 
     <section id="portfolio" class="bg-light">
@@ -127,10 +127,167 @@
           <h2 class="text-center">Portfolio<br></h2>
          </div>
        </div>
-        <div class="row">
-          <!-- new stuff goes here -->
-          <a href="https://oitowl7.github.io/hangman-game/" class="col-lg-4" target="none"><img src="https://i.imgflip.com/15rg6x.jpg" alt="happy ned"></a>
-        </div>
+       <center>
+          <div class="row">
+            <!-- new stuff goes here -->
+            <div class="col-lg-6 col-md-12">
+              <h3 class="project-title">Hangman(the website version)</h3>
+              <img src="https://i.imgflip.com/15rg6x.jpg" alt="happy ned">
+              <br>
+              <button type="button" class="button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#hangman1-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
+                
+                <div class="modal fade" id="hangman1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                              <h4 class="modal-title" id="myModalLabel">Hangman Vol. 1</h4>
+                          </div>
+                     <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
+                          <p class="text-center">
+                          <ul class="nav nav-tabs" id="tabContent">
+                            <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#hangman1-task" data-toggle="tab">Task</button></li>
+                            <li><button class="button button--aylen button--round-l button--text-small" href="#hangman1-method" data-toggle="tab">Method</button></li>
+                            <li><button class="button button--aylen button--round-l button--text-small" href="#hangman1-challenges" data-toggle="tab">Challenges</button></li>
+                            <li><button class="button button--aylen button--round-l button--text-small" href="#hangman1-links" data-toggle="tab">Links</button></li>
+                          </ul>
+                          </p>
+                          <!-- shows the different content from the buttons above -->
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="hangman1-task">
+                              <center>
+                                <img src="img/gimp-gif.gif" alt="My photoshop skills" id="hangman-task-img"><br><br>
+                                </center>
+                                <ul class="text-left">
+                                  <li>Choose and interesting theme.</li>
+                                  <li>Use key events (eg: onKeyUp) to listen for letters the player types</li>
+                                  <li>Display number of wins, the blanked out word with the letters correctly placed if guessed, number of guesses remaining, and letters already guessed</li>
+                                </ul>
+                              
+                            </div>
+                            <div class="tab-pane" id="hangman1-method">
+                              <p>this is a paragraph or list of the method I used to finish this whole trainwreck</p>
+                            </div>
+                            <div class="tab-pane" id="hangman1-challenges">
+                              <p>list or paragraph showing the challenges i faced when doing this and how they were overcome</p>
+                            </div>
+                            <div class="tab-pane" id="hangman1-links">
+                              <p>this is a place where the links to my github and gitpages for this are.</p>
+                            </div>
+                          </div>
+                          <!-- <div class="modal-body">
+                              <center>
+                              <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                              <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+                              <span><strong>Skills: </strong></span>
+                                  <span class="label label-warning">HTML5/CSS</span>
+                                  <span class="label label-info">Adobe CS 5.5</span>
+                                  <span class="label label-info">Microsoft Office</span>
+                                  <span class="label label-success">Windows XP, Vista, 7</span>
+                              </center>
+                              <hr>
+                              <center>
+                              <p class="text-left"><strong>Bio: </strong><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                              <br>
+                              </center>
+                          </div> -->
+                          <div class="modal-footer">
+                              <center>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Hangman</button>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+            <!-- new stuff goes here
+            <div class="col-lg-6 col-md-12">
+              <h3 class="project-title">Hangman(the website version)</h3>
+              <img src="https://i.imgflip.com/15rg6x.jpg" alt="happy ned">
+              <br>
+              <button type="button" class="button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#hangman1-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
+                
+                <div class="modal fade" id="hangman1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                              <h4 class="modal-title" id="myModalLabel">Hangman Vol. 1</h4>
+                          </div> -->
+                     <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
+                        <!--   <p class="text-center">
+                          <ul class="nav nav-tabs" id="tabContent">
+                            <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#hangman1-task" data-toggle="tab">Task</button></li>
+                            <li><button class="button button--aylen button--round-l button--text-small" href="#hangman1-method" data-toggle="tab">Method</button></li>
+                            <li><button class="button button--aylen button--round-l button--text-small" href="#hangman1-challenges" data-toggle="tab">Challenges</button></li>
+                            <li><button class="button button--aylen button--round-l button--text-small" href="#hangman1-links" data-toggle="tab">Links</button></li>
+                          </ul>
+                          </p> -->
+                          <!-- shows the different content from the buttons above -->
+                         <!--  <div class="tab-content">
+                            <div class="tab-pane active" id="hangman1-task">
+                              <center>
+                                <img src="img/gimp-gif.gif" alt="My photoshop skills">
+                                <p> This is a paragraph about the task that we were give</p>
+                              </center>
+                            </div>
+                            <div class="tab-pane" id="hangman1-method">
+                              <p>this is a paragraph or list of the method I used to finish this whole trainwreck</p>
+                            </div>
+                            <div class="tab-pane" id="hangman1-challenges">
+                              <p>list or paragraph showing the challenges i faced when doing this and how they were overcome</p>
+                            </div>
+                            <div class="tab-pane" id="hangman1-links">
+                              <p>this is a place where the links to my github and gitpages for this are.</p>
+                            </div>
+                          </div> -->
+                          <!-- <div class="modal-body">
+                              <center>
+                              <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                              <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+                              <span><strong>Skills: </strong></span>
+                                  <span class="label label-warning">HTML5/CSS</span>
+                                  <span class="label label-info">Adobe CS 5.5</span>
+                                  <span class="label label-info">Microsoft Office</span>
+                                  <span class="label label-success">Windows XP, Vista, 7</span>
+                              </center>
+                              <hr>
+                              <center>
+                              <p class="text-left"><strong>Bio: </strong><br>
+                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                              <br>
+                              </center>
+                          </div> -->
+                        <!--   <div class="modal-footer">
+                              <center>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Hangman</button>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+      </center>
       </div>
     </section>
 

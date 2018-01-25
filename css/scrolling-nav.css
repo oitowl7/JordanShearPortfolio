@@ -18,7 +18,16 @@ header {
 .about-header {
 	font-style: bold;
 }
-
+#about {
+	padding: 300px 0 350px;
+}
+#about-title{
+	padding-top: 50px;
+}
+#hangman-task-img {
+	max-width: 50%;
+	height: auto;
+}
 
 @media (min-width: 992px) {
   header {
