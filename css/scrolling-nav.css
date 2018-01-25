@@ -11,6 +11,7 @@ header {
 #larger-text {
   font-size: 50px;
 }
+
 #not-as-larger-text {
   font-size: 35px;
 }
@@ -18,6 +19,7 @@ header {
 .about-header {
 	font-style: bold;
 }
+<<<<<<< HEAD
 #about {
 	padding: 300px 0 350px;
 }
@@ -29,9 +31,19 @@ header {
 	height: auto;
 }
 
+.center-object {
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
+  }
+  #about {
+  	padding: 350px 0 350px;
   }
 }
 
