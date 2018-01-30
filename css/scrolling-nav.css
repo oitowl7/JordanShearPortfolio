@@ -5,7 +5,8 @@
  */
 
 header {
-  padding: 154px 0 100px;
+  padding: 154px 0 300px;
+  margin: 200px 0;
 }
 
 #larger-text {
@@ -19,24 +20,42 @@ header {
 .about-header {
 	font-style: bold;
 }
-<<<<<<< HEAD
+
 #about {
-	padding: 300px 0 350px;
+	/*padding: 300px 0 350px;*/
+	/*background-color: white;*/
+}
+.mar-bot-50 {
+	margin-bottom: 50px;
 }
 #about-title{
 	padding-top: 50px;
 }
-#hangman-task-img {
+
+.about-under {
+	padding: 200px 0 400px;
+}
+
+.modal-img {
 	max-width: 50%;
 	height: auto;
 }
 
-.center-object {
-	margin: auto;
-	justify-content: center;
-	align-items: center;
+.white-text {
+	color: white;
 }
 
+.center-thingy {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wood {
+	background-image: url("../img/backgrounds/wood4.jpg");
+	background-repeat: repeat;
+	height: 900px;
+}
 
 @media (min-width: 992px) {
   header {
