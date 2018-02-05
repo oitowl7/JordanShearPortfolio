@@ -39,6 +39,7 @@ header {
 .modal-img {
 	max-width: 50%;
 	height: auto;
+	margin-top: 10px;
 }
 
 .white-text {
