@@ -46,25 +46,11 @@
   <body id="page-top">
   
 
-<div class="fullscreen-bg">
-    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-        <source src="video/fireplace.mp4" type="video/mp4">
-    </video>
-</div>
-
-<!-- categories: 
-1.)header: name on the left with all the following cateories on the right
-2.)graphic with parallaxing inspirational image behind indicating this is a portfolio and sarcastically referencing the inspirational picture in the background. Also include my social media stuff.
-3.)Bio
-  past: where I come from
-  present: where I am
-  future: what I want to do
-4.) Additional information: technologies known, employment history, education, skills
-5.) Another motivational image with sarcasm 
-6.) Example code: Place all the previous projects and homework here with graphics. Make thumbnails for all of them that are appropriate and indicate if they have been updated since they have been created
-7.) Another motivational image with sarcasm 
-8.) Contact form
- -->
+  <div class="fullscreen-bg">
+      <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+          <source src="video/fireplace.mp4" type="video/mp4">
+      </video>
+  </div>
 
 
     <!-- Nav-Bar that collapses -->
@@ -126,8 +112,8 @@
 
     <section class="parallax1 text-center">
       <div class="container">
-        <h1 id="larger-text">Fun Fact!</h1>
-        <p class="lead" id="not-as-larger-text">I'm terrified of horses.<br>.....also, their legs are technically fingers and that grosses me out</p>
+        <h1 id="larger-text" class="white-text">Fun Fact!</h1>
+        <p class="lead white-text" id="not-as-larger-text white-text">I'm terrified of horses.<br>.....also, their legs are technically fingers and that grosses me out</p>
     </section>
 
     <section id="portfolio" class="bg-light wood">
@@ -168,18 +154,18 @@
                           </div>
                           <!-- shows the different content from the buttons above -->
                           <div class="tab-content">
-                            <div class="tab-pane active" id="hangman1-task">
+                            <div class="tab-pane active pad-right-20" id="hangman1-task">
                               <center>
                                 <img class="modal-img" src="img/hangman/gimp-gif.gif" alt="My photoshop skills" id="hangman-task-img"><br><br>
                                 </center>
                                 <ul class="text-left">
-                                  <li>Choose and interesting theme.</li>
+                                  <li>Choose and interesting theme</li>
                                   <li>Use key events (eg: onKeyUp) to listen for letters the player types</li>
                                   <li>Display number of wins, the blanked out word with the letters correctly placed if guessed, number of guesses remaining, and letters already guessed</li>
                                 </ul>
                               
                             </div>
-                            <div class="tab-pane" id="hangman1-method">
+                            <div class="tab-pane pad-right-20" id="hangman1-method">
                               <center>
                                 <img class="modal-img" src="img/hangman/hangman-code-laptop.jpg" alt="Code" id="hangman-method-img"><br><br>
                               </center>
@@ -189,7 +175,7 @@
                                 <li>Began my first Javascript app coding. Really hemmed and hawed over how to make arrays do array things and functions do function things but eventually figured it all out.</li>
                               </ul>
                             </div>
-                            <div class="tab-pane" id="hangman1-challenges">
+                            <div class="tab-pane pad-right-20" id="hangman1-challenges">
                                 <img class="modal-img" src="img/hangman/challenges.jpg" alt="Code" id="hangman-challenges-img"><br><br>
                                 <ul class="text-left">
                                   <li>The biggest challenge for me was making arrays, strings, numbers, and booleans behave the way I wanted to. I quickly learned that it was not the variables that needed to change, but me who needed to change. The elements behave how they do. I needed to adapt to that.</li>
@@ -197,7 +183,7 @@
                                   <li>I also had a pretty bad bug that caused the game to not work right. I never did find out why until well after the game was over but had to do with variables, scoping, and array lengths not being reset. I have left the bug in there for explaination's sake.</li>
                                 </ul>
                               </div>
-                            <div class="tab-pane" id="hangman1-links">
+                            <div class="tab-pane pad-right-20" id="hangman1-links">
                                 <img class="modal-img" src="img/hangman/links1.jpg" alt="Link" id="hangman-link-img"><br><br>
                                 <ul class="text-left">
                                   <li><a href="https://github.com/oitowl7/hangman-game" target="none">Github Repository</a></li>
@@ -246,41 +232,44 @@
                           </div>
                           <!-- shows the different content from the buttons above -->
                           <div class="tab-content">
-                            <div class="tab-pane active" id="cat-task">
+                            <div class="tab-pane active pad-right-20" id="cat-task">
                               <center>
                                 <img class="modal-img" src="img/crystal/page.jpg" alt="My page" id="cat-task-img"><br><br>
                                 </center>
                                 <ul class="text-left">
-                                  <li>Choose and interesting theme.</li>
-                                  <li>Use key events (eg: onKeyUp) to listen for letters the player types</li>
-                                  <li>Display number of wins, the blanked out word with the letters correctly placed if guessed, number of guesses remaining, and letters already guessed</li>
+                                  <li>Create a game where each cat has a random, unused value between 1 and 12</li>
+                                  <li>Randomly generate a target number between 19 and 120 for the user to aim for</li>
+                                  <li>Direct the user to click each cat to both find the value of each cat and then try to make the user's score add up to the target score</li>
+                                  <li>Track and display user's wins and losses</li>
+                                  <li>The primary focus of this assignment was using JQuery to interact with the DOM.</li>
                                 </ul>
                               
                             </div>
-                            <div class="tab-pane" id="cat-method">
+                            <div class="tab-pane pad-right-20" id="cat-method">
                               <center>
                                 <img class="modal-img" src="img/hangman/hangman-code-laptop.jpg" alt="Code" id="cat-method-img"><br><br>
                               </center>
                               <ul class="text-left">
-                                <li>Create the images: I had a vision for what I wanted but there wasn't really anything on the internet that fit my needs so I downloaded an image manipulation software called GIMP and used it to create my game images</li>
-                                <li>Create the front page: I hard coded the whole front splash page with pretty "manual" css. I had only just been introduced to bootstrap and css frameworks so I was not yet comfortable with it.</li>
-                                <li>Began my first Javascript app coding. Really hemmed and hawed over how to make arrays do array things and functions do function things but eventually figured it all out.</li>
+                                <li>Step one was getting all the resources I needed, which was one of the more enjoyable taskes I'v done. It involved looking up cat pictures...for probably far too long.</li>
+                                <li>Design the page using HTML/css/bootstrap. It was relatively simple and I just follwed the template I was given.</li>
+                                <li>Created the javascript file using JQuery and javascript. It included creating several random numbers and verifying that the number were not previously used in order to avoid duplicate numbers on different cats.</li>
                               </ul>
                             </div>
-                            <div class="tab-pane" id="cat-challenges">
-                                <img class="modal-img" src="img/hangman/challenges.jpg" alt="Code" id="cat-challenges-img"><br><br>
+                            <div class="tab-pane pad-right-20" id="cat-challenges">
+                                <img class="modal-img" src="img/crystal/challenges.jpg" alt="Code" id="cat-challenges-img"><br><br>
                                 <ul class="text-left">
-                                  <li>The biggest challenge for me was making arrays, strings, numbers, and booleans behave the way I wanted to. I quickly learned that it was not the variables that needed to change, but me who needed to change. The elements behave how they do. I needed to adapt to that.</li>
-                                  <li>I also did not now about the .join(" ").trim command and getting the words to display as I wanted them was not an easy task at the time</li>
-                                  <li>I also had a pretty bad bug that caused the game to not work right. I never did find out why until well after the game was over but had to do with variables, scoping, and array lengths not being reset. I have left the bug in there for explaination's sake.</li>
+                                  <li>The biggest challenge was using JQuery for the firest time. I had not real idea how to properly affect and update the DOM.</li>
+                                  <li>I also needed to learn how to code my HTML so that it was easier and made more sense to interact with the elements I wanted to affect.</li>
+                                  <li>I needed to learn how to run an random number generating function and verify that the number was not used before, requiring some functions to run recursively. </li>
+                                  <li>I also started to get a hint of javascript asyncronicity, but the sequencing of the functions was still quite terrible.</li>
                                 </ul>
                               </div>
-                            <div class="tab-pane" id="cat-links">
-                                <img class="modal-img" src="img/hangman/links1.jpg" alt="Link" id="cat-link-img"><br><br>
+                            <div class="tab-pane pad-right-20" id="cat-links">
+                                <img class="modal-img" src="img/crystal/link.jpg" alt="Link" id="cat-link-img"><br><br>
                                 <ul class="text-left">
-                                  <li><a href="https://github.com/oitowl7/hangman-game" target="none">Github Repository</a></li>
+                                  <li><a href="https://github.com/oitowl7/crystals" target="none">Github Repository</a></li>
                                   <br><br>
-                                  <li><a href="https://oitowl7.github.io/hangman-game/" target="none">Github Pages Link</a></li>
+                                  <li><a href="https://oitowl7.github.io/crystals/" target="none">Github Pages Link</a></li>
                                 </ul>
                             </div>
                           </div>
@@ -293,96 +282,92 @@
                   </div>
               </div>
             </div>
+          </div>
             <!-- new project ends here -->
             <!-- *********************************** -->
-
-            <!-- new project starts here -->
-            <!-- ********************************************** -->
-            <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
-              <h3 class="project-title white-text">Crystals/Cats</h3>
-              <img src="img/crystal/one.jpg" alt="Cat name crystal">
-              <br>
-              <div class="center-thingy">
-                <button type="button" class="center-thiny button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#cat-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
-              </div>
-                
-                <div class="modal fade" id="cat-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-lg">
-                      <div class="modal-content">
-                          <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                              <h4 class="modal-title" id="myModalLabel">Crystal/Cat Game</h4>
-                          </div>
-                     <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
-                          <div class="center-thingy">
-                            <ul class="nav nav-tabs" id="tabContent">
-                              <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#cat-task" data-toggle="tab">Task</button></li>
-                              <li><button class="button button--aylen button--round-l button--text-small" href="#cat-method" data-toggle="tab">Method</button></li>
-                              <li><button class="button button--aylen button--round-l button--text-small" href="#cat-challenges" data-toggle="tab">Challenges</button></li>
-                              <li><button class="button button--aylen button--round-l button--text-small" href="#cat-links" data-toggle="tab">Links</button></li>
-                            </ul>
-                          </div>
-                          <!-- shows the different content from the buttons above -->
-                          <div class="tab-content">
-                            <div class="tab-pane active" id="cat-task">
-                              <center>
-                                <img class="modal-img" src="img/crystal/page.jpg" alt="My page" id="cat-task-img"><br><br>
-                                </center>
-                                <ul class="text-left">
-                                  <li>Choose and interesting theme.</li>
-                                  <li>Use key events (eg: onKeyUp) to listen for letters the player types</li>
-                                  <li>Display number of wins, the blanked out word with the letters correctly placed if guessed, number of guesses remaining, and letters already guessed</li>
-                                </ul>
-                              
+          <div class="row">
+              <!-- new project starts here -->
+              <!-- ********************************************** -->
+              <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
+                <h3 class="project-title white-text">Trivia/Personality Game</h3>
+                <img src="img/trivia/0.jpg" alt="Trivia Game" class="img-sizer">
+                <br>
+                <div class="center-thingy">
+                  <button type="button" class="center-thiny button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#trivia-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
+                </div>
+                  
+                  <div class="modal fade" id="trivia-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title" id="myModalLabel">Trivia/Personality Game</h4>
                             </div>
-                            <div class="tab-pane" id="cat-method">
-                              <center>
-                                <img class="modal-img" src="img/hangman/hangman-code-laptop.jpg" alt="Code" id="cat-method-img"><br><br>
-                              </center>
-                              <ul class="text-left">
-                                <li>Create the images: I had a vision for what I wanted but there wasn't really anything on the internet that fit my needs so I downloaded an image manipulation software called GIMP and used it to create my game images</li>
-                                <li>Create the front page: I hard coded the whole front splash page with pretty "manual" css. I had only just been introduced to bootstrap and css frameworks so I was not yet comfortable with it.</li>
-                                <li>Began my first Javascript app coding. Really hemmed and hawed over how to make arrays do array things and functions do function things but eventually figured it all out.</li>
+                       <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
+                            <div class="center-thingy">
+                              <ul class="nav nav-tabs" id="tabContent">
+                                <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#trivia-task" data-toggle="tab">Task</button></li>
+                                <li><button class="button button--aylen button--round-l button--text-small" href="#trivia-method" data-toggle="tab">Method</button></li>
+                                <li><button class="button button--aylen button--round-l button--text-small" href="#trivia-challenges" data-toggle="tab">Challenges</button></li>
+                                <li><button class="button button--aylen button--round-l button--text-small" href="#trivia-links" data-toggle="tab">Links</button></li>
                               </ul>
                             </div>
-                            <div class="tab-pane" id="cat-challenges">
-                                <img class="modal-img" src="img/hangman/challenges.jpg" alt="Code" id="cat-challenges-img"><br><br>
+                            <!-- shows the different content from the buttons above -->
+                            <div class="tab-content">
+                              <div class="tab-pane active pad-right-20" id="trivia-task">
+                                <center>
+                                  <img class="modal-img" src="img/trivia/page.jpg" alt="My page" id="trivia-task-img"><br><br>
+                                  </center>
+                                  <ul class="text-left">
+                                    <li>Create a trivia game that shows one question at a time to a player who must answer it before the timer runs out, which is reset upon the question being answered.</li>
+                                    <li>If the player selects the right answer, show a screen congratulating them on how amazing they are.</li>
+                                    <li>On the final screen, show the player how many they got right and wrong and give them an option to restart the game without reloading the page.</li>
+                                  </ul>
+                                
+                              </div>
+                              <div class="tab-pane pad-right-20" id="trivia-method">
+                                <center>
+                                  <img class="modal-img" src="img/trivia/results.jpg" alt="Code" id="trivia-method-img"><br><br>
+                                </center>
                                 <ul class="text-left">
-                                  <li>The biggest challenge for me was making arrays, strings, numbers, and booleans behave the way I wanted to. I quickly learned that it was not the variables that needed to change, but me who needed to change. The elements behave how they do. I needed to adapt to that.</li>
-                                  <li>I also did not now about the .join(" ").trim command and getting the words to display as I wanted them was not an easy task at the time</li>
-                                  <li>I also had a pretty bad bug that caused the game to not work right. I never did find out why until well after the game was over but had to do with variables, scoping, and array lengths not being reset. I have left the bug in there for explaination's sake.</li>
+                                  <li>For this project, I went a bit off script from the original instructions, with the blessing of those who would be grading it of course. It mae little sense to me to have a trivia game with only 5-10 pre-scripted questions (we had not yet learned of APIs) so I decided to create a personality test that logged answers and kicked out a character that the user represents.</li>
+                                  <li>First, I had to decide on a theme. Me being a Star Wars fan, I chose to make my characters about that. I had to choose 22 force sensitive characters from the universe. I then gave each a good/evil value as well as a short bio and stored them all in an array</li>
+                                  <li>I then created a set of questions and responses. Each response had a value assigned to it from -2 to +2. There was also Jar Jar Binks quotes that were worth 0. If the user selected all Jar Jar quotes or ran out of time on each question, they got Jar Jar as their character. Otherwise, the final score was tallied and their character was shown.</li>
                                 </ul>
                               </div>
-                            <div class="tab-pane" id="cat-links">
-                                <img class="modal-img" src="img/hangman/links1.jpg" alt="Link" id="cat-link-img"><br><br>
-                                <ul class="text-left">
-                                  <li><a href="https://github.com/oitowl7/hangman-game" target="none">Github Repository</a></li>
-                                  <br><br>
-                                  <li><a href="https://oitowl7.github.io/hangman-game/" target="none">Github Pages Link</a></li>
-                                </ul>
+                              <div class="tab-pane pad-right-20" id="trivia-challenges">
+                                  <img class="modal-img" src="img/trivia/challenges.jpg" alt="Code" id="trivia-challenges-img"><br><br>
+                                  <ul class="text-left">
+                                    <li>The most time consuming part of this project was creating the characters array. I had to find 22 characters (as the user score could be anywhere between -10 and +10 and 2 characters were needed for 0). Finding the characters and creating a very short bio for each character was very time consuming but also fairly enjoyable.</li>
+                                    <li>Automating the photos that were shown when the final score was tallied was a challenge. I simply ened up naming all the photos the corresponding scores.</li>
+                                    <li>I wanted to also mix my responses up while maintaining their values. To do this I used random number generators and verifications to randomly display the responses and keep the good/bad values intact.</li>
+                                  </ul>
+                                </div>
+                              <div class="tab-pane pad-right-20" id="trivia-links">
+                                  <img class="modal-img" src="img/trivia/links.jpg" alt="Link" id="trivia-link-img"><br><br>
+                                  <ul class="text-left">
+                                    <li><a href="https://github.com/oitowl7/trivia-game" target="none">Github Repository</a></li>
+                                    <br><br>
+                                    <li><a href="https://oitowl7.github.io/trivia-game/" target="none">Github Pages Link</a></li>
+                                  </ul>
+                              </div>
                             </div>
-                          </div>
-                          <div class="modal-footer">
-                              <center>
-                              <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about cats</button>
-                              </center>
-                          </div>
-                      </div>
-                  </div>
+                            <div class="modal-footer">
+                                <center>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about trivia</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
-            <!-- new project ends here -->
-            <!-- *********************************** -->
-
+              <!-- new project ends here -->
+              <!-- *********************************** -->
 
             
-
+            
           </div>
-
-
-
-
-
       </center>
       </div>
     </section>

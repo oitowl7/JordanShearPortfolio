@@ -53,9 +53,20 @@ header {
 }
 
 .wood {
-	background-image: url("../img/backgrounds/wood4.jpg");
+	background-image: url("../img/backgrounds/wood1.jpg");
 	background-repeat: repeat;
-	height: 900px;
+	min-height: 900px;
+}
+
+.img-sizer {
+	max-height: 250px
+}
+.mar-bot-30 {
+	margin-bottom: 50px;
+}
+
+.pad-right-20 {
+	padding-right: 20px;
 }
 
 @media (min-width: 992px) {
