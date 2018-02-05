@@ -140,9 +140,9 @@
        <center>
           <div class="row">
 
-            <!-- new project goes here -->
+            <!-- new project starts here -->
             <!-- ********************************************** -->
-            <div class="col-lg-6 col-md-12 mar-bot-30">
+            <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
               <h3 class="project-title white-text">Chopman</h3>
               <img src="https://i.imgflip.com/15rg6x.jpg" alt="happy ned">
               <br>
@@ -218,9 +218,9 @@
             <!-- new project ends here -->
             <!-- *********************************** -->
             
-            <!-- new project goes here -->
+            <!-- new project starts here -->
             <!-- ********************************************** -->
-            <div class="col-lg-6 col-md-12 mar-bot-30">
+            <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
               <h3 class="project-title white-text">Crystals/Cats</h3>
               <img src="img/crystal/one.jpg" alt="Cat name crystal">
               <br>
@@ -295,6 +295,85 @@
             </div>
             <!-- new project ends here -->
             <!-- *********************************** -->
+
+            <!-- new project starts here -->
+            <!-- ********************************************** -->
+            <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
+              <h3 class="project-title white-text">Crystals/Cats</h3>
+              <img src="img/crystal/one.jpg" alt="Cat name crystal">
+              <br>
+              <div class="center-thingy">
+                <button type="button" class="center-thiny button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#cat-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
+              </div>
+                
+                <div class="modal fade" id="cat-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                              <h4 class="modal-title" id="myModalLabel">Crystal/Cat Game</h4>
+                          </div>
+                     <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
+                          <div class="center-thingy">
+                            <ul class="nav nav-tabs" id="tabContent">
+                              <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#cat-task" data-toggle="tab">Task</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#cat-method" data-toggle="tab">Method</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#cat-challenges" data-toggle="tab">Challenges</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#cat-links" data-toggle="tab">Links</button></li>
+                            </ul>
+                          </div>
+                          <!-- shows the different content from the buttons above -->
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="cat-task">
+                              <center>
+                                <img class="modal-img" src="img/crystal/page.jpg" alt="My page" id="cat-task-img"><br><br>
+                                </center>
+                                <ul class="text-left">
+                                  <li>Choose and interesting theme.</li>
+                                  <li>Use key events (eg: onKeyUp) to listen for letters the player types</li>
+                                  <li>Display number of wins, the blanked out word with the letters correctly placed if guessed, number of guesses remaining, and letters already guessed</li>
+                                </ul>
+                              
+                            </div>
+                            <div class="tab-pane" id="cat-method">
+                              <center>
+                                <img class="modal-img" src="img/hangman/hangman-code-laptop.jpg" alt="Code" id="cat-method-img"><br><br>
+                              </center>
+                              <ul class="text-left">
+                                <li>Create the images: I had a vision for what I wanted but there wasn't really anything on the internet that fit my needs so I downloaded an image manipulation software called GIMP and used it to create my game images</li>
+                                <li>Create the front page: I hard coded the whole front splash page with pretty "manual" css. I had only just been introduced to bootstrap and css frameworks so I was not yet comfortable with it.</li>
+                                <li>Began my first Javascript app coding. Really hemmed and hawed over how to make arrays do array things and functions do function things but eventually figured it all out.</li>
+                              </ul>
+                            </div>
+                            <div class="tab-pane" id="cat-challenges">
+                                <img class="modal-img" src="img/hangman/challenges.jpg" alt="Code" id="cat-challenges-img"><br><br>
+                                <ul class="text-left">
+                                  <li>The biggest challenge for me was making arrays, strings, numbers, and booleans behave the way I wanted to. I quickly learned that it was not the variables that needed to change, but me who needed to change. The elements behave how they do. I needed to adapt to that.</li>
+                                  <li>I also did not now about the .join(" ").trim command and getting the words to display as I wanted them was not an easy task at the time</li>
+                                  <li>I also had a pretty bad bug that caused the game to not work right. I never did find out why until well after the game was over but had to do with variables, scoping, and array lengths not being reset. I have left the bug in there for explaination's sake.</li>
+                                </ul>
+                              </div>
+                            <div class="tab-pane" id="cat-links">
+                                <img class="modal-img" src="img/hangman/links1.jpg" alt="Link" id="cat-link-img"><br><br>
+                                <ul class="text-left">
+                                  <li><a href="https://github.com/oitowl7/hangman-game" target="none">Github Repository</a></li>
+                                  <br><br>
+                                  <li><a href="https://oitowl7.github.io/hangman-game/" target="none">Github Pages Link</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                              <center>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about cats</button>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- new project ends here -->
+            <!-- *********************************** -->
+
 
             
 
