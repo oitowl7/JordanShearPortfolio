@@ -126,11 +126,11 @@
        <center>
           <div class="row">
 
-            <!-- new project starts here -->
+            <!-- new project starts here PROJECT 1-->
             <!-- ********************************************** -->
             <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
               <h3 class="project-title white-text">Chopman</h3>
-              <img src="https://i.imgflip.com/15rg6x.jpg" alt="happy ned">
+              <img src="img/hangman/front.jpg" alt="happy ned">
               <br>
               <div class="center-thingy">
                 <button type="button" class="center-thiny button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#hangman1-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
@@ -204,7 +204,7 @@
             <!-- new project ends here -->
             <!-- *********************************** -->
             
-            <!-- new project starts here -->
+            <!-- new project starts here PROJECT 2-->
             <!-- ********************************************** -->
             <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
               <h3 class="project-title white-text">Crystals/Cats</h3>
@@ -286,7 +286,7 @@
             <!-- new project ends here -->
             <!-- *********************************** -->
           <div class="row">
-              <!-- new project starts here -->
+              <!-- new project starts here PROJECT 3-->
               <!-- ********************************************** -->
               <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
                 <h3 class="project-title white-text">Trivia/Personality Game</h3>
@@ -361,9 +361,171 @@
                     </div>
                 </div>
               </div>
-            </div>
               <!-- new project ends here -->
               <!-- *********************************** -->
+
+            <!-- new project starts here PROJECT 4-->
+            <!-- ********************************************** -->
+            <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
+              <h3 class="project-title white-text">Giphy</h3>
+              <img src="img/giphy/front.jpg" alt="Simon's Cat" class="img-sizer">
+              <br>
+              <div class="center-thingy">
+                <button type="button" class="center-thiny button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#giphy-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
+              </div>
+                
+                <div class="modal fade" id="giphy-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                              <h4 class="modal-title" id="myModalLabel">Giphy</h4>
+                          </div>
+                     <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
+                          <div class="center-thingy">
+                            <ul class="nav nav-tabs" id="tabContent">
+                              <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#giphy-task" data-toggle="tab">Task</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#giphy-method" data-toggle="tab">Method</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#giphy-challenges" data-toggle="tab">Challenges</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#giphy-links" data-toggle="tab">Links</button></li>
+                            </ul>
+                          </div>
+                          <!-- shows the different content from the buttons above -->
+                          <div class="tab-content">
+                            <div class="tab-pane active pad-right-20" id="giphy-task">
+                              <center>
+                                <img class="modal-img" src="img/giphy/task.gif" alt="My photoshop skills" id="giphy-task-img"><br><br>
+                                </center>
+                                <ul class="text-left">
+                                  <li>Create an array of terms that will be queried by the Giphy API.</li>
+                                  <li>Take topics from an input point from the user that appends a button to the screen. This buttoncan be used to search Giphy for that term.</li>
+                                  <li>When the user clicks on a button, the page should grab 10 static, non-animated gifs from Giphy and append them to the page.</li>
+                                  <li>When the user clicks on one of the images, the gif should animate. If the user clicks again, it should stop.</li>
+                                  <li>Under every gif, there should be a rating displayed. This rating comes from the Giphy API.</li>
+                                </ul>
+                              
+                            </div>
+                            <div class="tab-pane pad-right-20" id="giphy-method">
+                              <center>
+                                <img class="modal-img" src="img/giphy/method.jpg" alt="Code" id="giphy-method-img"><br><br>
+                              </center>
+                              <ul class="text-left">
+                                <li>I, again, didn't feel that this project challenged me quite enough so I decided I wanted to work on javascript's built in animations to make the page a little more interesting.</li>
+                                <li>FIrst I had to design the page. This consisted of creating a background that scaled as the page grew or shrunk that had the entire body display on top of it, an area for the search terms from the javascript file to be appended to as buttons, and a form that takes user inputs for new search tearms.</li>
+                                <li>Find the values to best animate the search term to move it around the screen to the best places.</li>
+                                <li>Get the gif information and rating from the Giphy API and append it to the screen. While the instructions said to get 10 random gifs, I worked with those grading it because I thought that only getting one gif made more sense and made the page look and flow better.</li>
+                              </ul>
+                            </div>
+                            <div class="tab-pane pad-right-20" id="giphy-challenges">
+                                <img class="modal-img" src="img/giphy/challenges.jpg" alt="Code" id="giphy-challenges-img"><br><br>
+                                <ul class="text-left">
+                                  <li>The most challenging parts of this were the self-imposed things I wanted to do with this page. I really wanted to work on animations which is not something that we had done at any time and took a little while to figure out.</li>
+                                  <li>Figuring out how to do API get request for the first time was a bit challenging. Not know how to get the JSON object, nor what to do with it, took a little while to figure out but in the end was a good learning experience.</li>
+                                  <li>Learning how to use JQuery to append divs that were dynamically created was a new experience in this project. I had worked with that kind of thing before somewhat, but never dynamically so.</li>
+                                </ul>
+                              </div>
+                            <div class="tab-pane pad-right-20" id="giphy-links">
+                                <img class="modal-img" src="img/giphy/links.jpg" alt="Link" id="giphy-link-img"><br><br>
+                                <ul class="text-left">
+                                  <li><a href="https://github.com/oitowl7/giphy" target="none">Github Repository</a></li>
+                                  <br><br>
+                                  <li><a href="https://oitowl7.github.io/giphy/" target="none">Github Pages Link</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                              <center>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about giphy</button>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- new project ends here -->
+            <!-- *********************************** -->
+            </div>
+
+
+          <div class="row">
+
+            <!-- new project starts here PROJECT 5-->
+            <!-- ********************************************** -->
+            <div class="col-lg-6 col-md-6 col-sm-12 mar-bot-30">
+              <h3 class="project-title white-text">Train Schedule</h3>
+              <img src="img/train/front.jpg" alt="Trivia Game" class="img-sizer">
+              <br>
+              <div class="center-thingy">
+                <button type="button" class="center-thiny button button--aylen button--round-l button--text-small" data-toggle="modal" data-target="#train-modal"><i class="button__icon icon icon-plus"></i><span>Expand</span></button>
+              </div>
+                
+                <div class="modal fade" id="train-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                              <h4 class="modal-title" id="myModalLabel">Train Schedule</h4>
+                          </div>
+                     <!--      unordered list that hold all the tabs at the top that are selectable and show a different screen in the modal -->
+                          <div class="center-thingy">
+                            <ul class="nav nav-tabs" id="tabContent">
+                              <li class="active"><button class="button button--aylen button--round-l button--text-small" href="#train-task" data-toggle="tab">Task</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#train-method" data-toggle="tab">Method</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#train-challenges" data-toggle="tab">Challenges</button></li>
+                              <li><button class="button button--aylen button--round-l button--text-small" href="#train-links" data-toggle="tab">Links</button></li>
+                            </ul>
+                          </div>
+                          <!-- shows the different content from the buttons above -->
+                          <div class="tab-content">
+                            <div class="tab-pane active pad-right-20" id="train-task">
+                              <center>
+                                <img class="modal-img" src="img/train/0.jpg" alt="My page" id="train-task-img"><br><br>
+                                </center>
+                                <ul class="text-left">
+                                  <li>Create a trivia game that shows one question at a time to a player who must answer it before the timer runs out, which is reset upon the question being answered.</li>
+                                  <li>If the player selects the right answer, show a screen congratulating them on how amazing they are.</li>
+                                  <li>On the final screen, show the player how many they got right and wrong and give them an option to restart the game without reloading the page.</li>
+                                </ul>
+                              
+                            </div>
+                            <div class="tab-pane pad-right-20" id="train-method">
+                              <center>
+                                <img class="modal-img" src="img/train/method.jpg" alt="Code" id="train-method-img"><br><br>
+                              </center>
+                              <ul class="text-left">
+                                <li>For this project, I went a bit off script from the original instructions, with the blessing of those who would be grading it of course. It mae little sense to me to have a trivia game with only 5-10 pre-scripted questions (we had not yet learned of APIs) so I decided to create a personality test that logged answers and kicked out a character that the user represents.</li>
+                                <li>First, I had to decide on a theme. Me being a Star Wars fan, I chose to make my characters about that. I had to choose 22 force sensitive characters from the universe. I then gave each a good/evil value as well as a short bio and stored them all in an array</li>
+                                <li>I then created a set of questions and responses. Each response had a value assigned to it from -2 to +2. There was also Jar Jar Binks quotes that were worth 0. If the user selected all Jar Jar quotes or ran out of time on each question, they got Jar Jar as their character. Otherwise, the final score was tallied and their character was shown.</li>
+                              </ul>
+                            </div>
+                            <div class="tab-pane pad-right-20" id="train-challenges">
+                                <img class="modal-img" src="img/train/challenges.jpg" alt="Code" id="train-challenges-img"><br><br>
+                                <ul class="text-left">
+                                  <li>The most time consuming part of this project was creating the characters array. I had to find 22 characters (as the user score could be anywhere between -10 and +10 and 2 characters were needed for 0). Finding the characters and creating a very short bio for each character was very time consuming but also fairly enjoyable.</li>
+                                  <li>Automating the photos that were shown when the final score was tallied was a challenge. I simply ened up naming all the photos the corresponding scores.</li>
+                                  <li>I wanted to also mix my responses up while maintaining their values. To do this I used random number generators and verifications to randomly display the responses and keep the good/bad values intact.</li>
+                                </ul>
+                              </div>
+                            <div class="tab-pane pad-right-20" id="train-links">
+                                <img class="modal-img" src="img/train/links.jpg" alt="Link" id="train-link-img"><br><br>
+                                <ul class="text-left">
+                                  <li><a href="https://github.com/oitowl7/trivia-game" target="none">Github Repository</a></li>
+                                  <br><br>
+                                  <li><a href="https://oitowl7.github.io/trivia-game/" target="none">Github Pages Link</a></li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                              <center>
+                              <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about trivia</button>
+                              </center>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- new project ends here -->
+            <!-- *********************************** -->
 
             
             
